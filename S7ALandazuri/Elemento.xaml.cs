@@ -45,7 +45,7 @@ namespace S7ALandazuri
             {
                 var databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "uisrael.db3");
                 var db = new SQLiteConnection(databasePath);
-                actualizar = actualizar1(db, idSel, txtNombre.Text, txtUsuario.Text, txtUsuario.Text);
+                actualizar = actualizar1(db, idSel, txtNombre.Text, txtUsuario.Text, txtContrasena.Text);
                 DisplayAlert("Mensaje", "Actualizado", "ok");
                 Navigation.PushAsync(new ConsultaRegistro());
             }
